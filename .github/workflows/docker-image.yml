@@ -37,7 +37,7 @@ jobs:
       - name: Format with black
         uses: lgeiger/black-action@v1.0.1
         with:
-          args: ". --check"
+          args: ". --check --line-length 79"
 
       - name: Lint with flake8
         run: |
